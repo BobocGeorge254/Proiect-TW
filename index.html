@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang = "ro">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Facultatea de matematica si informatica</title>
+        <link href = "style.css" type = "text/css" rel = "stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 style = "color:aliceblue">
+                Facultatea de matematica si informatica
+            </h1>
+            <img src = "sigla.png" alt = "FMI">
+        </header>
+        <nav>
+            <ul class = "meniu">
+                <li> Despre
+                    <ul class = "submeniu">
+                        <li><a href = "index.html#despre">Despre universitate</a></li>
+                        <li><a href = "index.html#proiecte">Proiecte</a></li>
+                        <li><a href = "index.html#performante">Performantele Studentilor </a></li>
+                    </ul>
+                </li>
+                <li> Programe de studiu
+                    <ul class = "submeniu">
+                        <li><a href = "Matematica.html">Matematica</a></li>
+                        <li><a href = "Informatica.html">Informatica</a></li>
+                        <li><a href = "CTI.html">CTI</a></li>
+                    </ul>
+                </li>
+                <li><a href = "orar.html">Orarul grupelor</a></li>
+                <li><a href = "index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div>
+                <section id = "home" >
+                    <img src = "" id = "image">
+                    <script type = "text/javascript">
+                        window.onload = function() {
+                        let image = document.getElementById('image') ;
+                        let images = ["img1.png", "img2.png", "img3.png"] ;
+                        let index = 1 ;
+                        image.src = images[1] ;
+                        setInterval(function() {
+                            image.src = images[index % 3] ;
+                            index ++ ;
+                            } , 2000 ) ;
+                        }
+                    </script>
+                </section>
+            </div>
+            <div id = "container-pagina">
+                <section id = "noutati">
+                    <h2 style = "padding-left: 20px;"> Noutati </h2>
+                    <article>
+                        <h3 class = "titlu"> LOS Team </h3>
+                        <p><span style="text-decoration: underline"> Echipa de research a FMI</span>, infiintata de catre </p>
+                        <ul>
+                            <li>Laurentiu Leustean</li>
+                            <li>Paul Irofti</li>
+                            <li>Andrei Patrascu</li>
+                        </ul>
+                        <img src = "LL.png" id = "profesor">
+                        <img src = "PI.png" id = "profesor">
+                        <img src = "AP.png" id = "profesor">
+                        <p>
+                            in Octombrie 2020, isi propune sa stimuleze cercetarea interdisciplinara in domeniile logicii, optimizarii si securitatii, cu tangente atat in cercetarea industriala, cat si in aplicatiile industriale ale acesteia.
+                          
+                            Alte puncte de interes sunt proof mining și aplicații la optimizare, teoria ergodică și analiza neliniară, optimizarea convexă pentru învățarea automată, procesarea semnalului și factorizarea matricei (învățare dicționar), securitate, detectarea anomaliilor și spălarea anti-bani.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3 class = "titlu"> Admitere 2022 </h3>
+                        <p>Admiterea pentru anul 2022-2023 se va desfasura in format <span style="text-decoration: underline;">fizic.</span><br>
+                        Premergator admiterii, va avea loc a doua editie a concursului Mate-Info UB, organizat in doua etape, conform calendarului de mai jos. Mai multe detalii despre organizarea si desfasurarea concursului Mate-Info UB, se gasesc <span><a href = "link">aici.</a></span></p>
+                        <img src = "concurs.jpg" id = "concurs">
+                    </article>
+                </section>
+
+                <section id = "fixed">
+                    <div>
+                        <h3 class = "titlu"> Locatie </h3>
+                        <ul> 
+                            Adresa : Sector 1, Strada Academiei 14, București 010014
+                            <li> STB : 69, 70, 201, 336, 361, 784 - Universitate </li>
+                            <li> Metrou : M2 - Universitate </li>
+                        </ul>
+                        <img src = "locatie.png" id = "locatie"> 
+                    </div>
+
+                    <div id = "contact">
+                        <ul>
+                            <h3 class = "titlu">Contact</h3>
+                            <li> Telefon : +4021 314 3508</li>
+                            <li> Fax : +4021 315 6990</li>
+                            <li> Mail : secretariat @ fmi.unibuc.ro </li>
+                            <li> ..sau direct aici</li>
+                        </ul>
+                    </div>
+                    <div>
+                            <form>
+                                <label for="fname">Nume:</label>
+                                <input type="text" id="fname" name="fname"><br><br>
+                                <label for="lname">Prenume:</label>
+                                <input type="text" id="lname" name="lname"><br><br>
+                                <label for="mesaj">Mesaj:</label>
+                                <input type="text" id="mesaj" name="mesaj"><br><br>
+                                <input type="submit" value="Trimitere">
+                            </form>
+                    </div>
+                </section>
+            </div>
+            <div>
+                <section id = "despre">
+                    <h2 style = "padding-left: 20px; text-align: center;"> Despre universitate </h2>
+                    <p>
+                        Univeristatea din Bucuresti este o universitate de stat situata in Bucuresti, 
+                        una dintre cele mai prestigioase institutii de stat din romania. A fost fondata 
+                        in 1864, fiind a doua universitate din Romania, dupa cea din Iasi. <br>
+                        Universitatea din Bucuresti ofera numeroase programe de studii, la toate nivelurile
+                        si formele de pregatire universitara: 22 de programe de scurtă durată, peste 75 de 
+                        programe de lungă durată, 12 programe în forma de învățământ deschis și la distanță
+                        , peste 120 de programe de masterat, peste 50 de programe de doctorat, programe de 
+                        înalte studii postuniversitare, programe de reconversie profesională și de 
+                        perfecționare.
+                    </p>
+                    <img src = "ub.jpeg">
+                    <li><h2 stlye = "padding-left : 20px;"> Despre facultate </h2></li>
+                    <p>
+                        În 1864, când s-a înființat Universitatea din București, una dintre cele trei facultăți 
+                        ale ei era Facultatea de Științe fizice, matematice și naturale (ulterior devenită Facultatea 
+                        de Științe), care din 1866 s-a scindat într-o secție de științe fizico-matematice și alta de 
+                        științe fizico-naturale. Disciplinele matematice care figurau în programa facultății erau: 
+                        Introducțiune în calcul, Algebră superioară și Calculul diferențial și integral, Mecanică 
+                        elementară și rațională, Geometria descriptivă, Geometria analitică, Geodezia teoretică și 
+                        Astronomia, Desenul linear și topografie. Unul dintre primii profesori ai facultății, Alexandru 
+                        Orăscu, se ocupa în egală măsură de matematică și de arhitectură, el fiind și creatorul Palatului 
+                        Universității.
+                        <br>
+                        Situată în centrul Bucureștiului, în aceeași clădire cu Facultatea de Litere, Istorie, Geologie, 
+                        Geografie, Administrație Publică și Afaceri și Chimie, la un pas de Institutul de Arhitectură și 
+                        de Teatrul Național, facultatea rămâne cea mai bună dintre cele de matematică din țară.
+                        <br>
+                        Mari personalități care au predat aici: Spiru Haret, Dimitrie Pompeiu, Traian Lalescu, 
+                        Gheorghe Țițeica, David Emanuel, Simion Stoilow, Victor Vâlcovici, Dan Barbilian (Ion Barbu), 
+                        Alexandru Ghika, Miron Nicolescu, Gheorghe Vrânceanu, Caius Iacob, Nicolae Teodorescu, Octav Onicescu, 
+                        Grigore C. Moisil, Gheorghe Mihoc.
+                        <br><br>
+                        Domenii de licență: Matematică, Informatică, Calculatoare și Tehnologia Informației.
+                        <br>
+                        Specializări: Matematică (ZI), Informatică (ZI, ID), Calculatoare și Tehnologia Informației.
+                        <br>
+                        Număr cadre didactice: 123
+                        <br>
+                        Număr de studenți: 1815
+                    </p>
+                </section>
+                <section id = "proiecte">
+                    <h2 style = "padding-left: 20px; text-align: center;"> Proiecte </h2>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <img src = "footer.png">
+        </footer>
+    </body>
+</html>
